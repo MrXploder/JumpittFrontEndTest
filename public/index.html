@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>meddApp</title>
+  <!-- start template tags -->
+  <link rel="stylesheet" href="css/20bootstrap.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/30spinkit.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/40fontawesome-all.min.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/50ngDialog.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/51ngDialog-theme-default.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/60angular-notify.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/70fullcalendar.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <link rel="stylesheet" href="css/99custom.css?v=bb90774485095952ece0ddf8946c9710a13f085a"/>
+  <script src="src/vendor/10jquery.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/11moment.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/12moment-locale-es.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/13moment-timezone.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/14lodash.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/15chart.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/16fullcalendar.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/17fullcalendar-locale-es.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/18api-check.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/20angular.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/21angular-dirPagination.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/22angular-html5storage.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/23angular-loadingBar.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/24angular-resource.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/25angular-ui-router.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/26angular-dialogs.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/27angular-rut.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/28angular-messages.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/29angular-local-resource.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/30angular-ui-calendar.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/31angular-ui-select.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/32angular-animate.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/33angular-chart.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/34angular-notify.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/35angular-ui-bootstrap.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/36angular-formly.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/37angular-formly-templates-bootstrap.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/38angular-sanitize.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/98service-worker-registration.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/vendor/99angular-templates.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/10index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/11bootstrap.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/12info.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/20uiRouterProvider.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/21localStorageProvider.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/22ngDialogProvider.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/module/30run.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/eventCalendar/controller.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/eventCalendar/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/hasError/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/hasSuccess/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/hasWarning/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/ngCurrency/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/ngVisible/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/routeLoadingIndicator/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/directive/stringToNumber/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/factory/Appointments.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/factory/Auth.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/factory/Doctors.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/factory/Operators.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/factory/Patients.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/factory/Printer.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/filter/characterCounter.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/filter/dateRange.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/filter/timeStampTo.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/filter/unique.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/filter/wordCounter.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/dialog/calendar/controller.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/route/enterPatients/controller.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/route/home/controller.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/route/login/controller.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <script src="src/route/logout/index.js?v=bb90774485095952ece0ddf8946c9710a13f085a"></script>
+  <!-- end template tags -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');</script>
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+  <!-- <pre>{{$rs.$currentUser() |json}}</pre> -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" ng-if="$rs.$currentUser()">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="home">meddApp</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" style="width: 80%">
+          <li><a ui-sref="enterPatients">Ingresar Usuarios</a></li>
+          <li><a ui-sref="controlList">Usuarios en Control</a></li>
+          <li><a ui-sref="daySchedule">Estadistica Diaria</a></li>
+          <li><a ui-sref="monthSchedule">Estadistica Mensual</a></li>
+          <li><a ui-sref="medicsManagement">Medicos</a></li>
+          <li><a ui-sref="patientsManagement">Usuarios</a></li>
+          <li><a ui-sref="operatorsManagement">Operadores</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a ui-sref="config"><i class="fas fa-cog"></i></a></li>
+          <li><a ui-sref="logout"><i class="fas fa-times"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="margin-bottom: 60px; margin-top: 70px;">
+    <route-loading-indicator ng-hide="!$rs.$isRouteChanging"></route-loading-indicator>
+    <ui-view ng-hide="$rs.$isRouteChanging"></ui-view>
+  </div>
+  <br>
+
+  <!-- <div class="container-fluid bg-secondary footer" ng-if="$rs.$currentUser()">
+    <div class="row">
+      <div class="col-lg-12">
+        asdasd
+      </div>
+    </div>
+  </div> -->
+</body>
+</html>
