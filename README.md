@@ -13,9 +13,14 @@ git clone https://github.com/MrXploder/JumpittFrontEndTest.git
 cd JumpittFrontEndTest
 node start
 ```
-
 Luego abre tu navegador favorito en: http://localhost
-Deberias ver de inmediato la aplicación
+Deberias ver de inmediato la aplicación.
+
+O mas rapido!:
+https://mrxploder.github.io/JumpittFrontEndTest/public/#!/login
+
+
+
 
 ACERCA
 -----------
