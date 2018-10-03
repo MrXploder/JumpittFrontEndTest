@@ -35,4 +35,4 @@ AngularJS utiliza arquitectura MV*.
 
 Para este caso se delegó la adquisición de datos a ngResource y una Factory llamada: "Demo"
 
-No tenia mucho tiempo para desarrollar la app pero está hecho ❤
+No tenia mucho tiempo para desarrollar la app pero está hecho con ❤
