@@ -19,5 +19,20 @@ Deberias ver de inmediato la aplicación
 
 ACERCA
 -----------
-* Desarrollado con AngularJS 1.7
-* y Bootstrap 3.7
+Esta aplicación está desarrollada con AngularJS 1.7 y Bootstrap 3.7
+Las dependencias usadas son: 
+* jQuery
+* Moment
+* Chartjs
+* ngResource
+* ui-Router
+* angular-charts
+* ui-bootstrap
+
+Todas las dependencias se incluyen en la carpeta "VENDOR".
+
+AngularJS utiliza arquitectura MV*.
+
+Para este caso se delegó la adquisición de datos a ngResource y una Factory llamada: "Demo"
+
+No tenia mucho tiempo para desarrollar la app pero está hecho ❤
