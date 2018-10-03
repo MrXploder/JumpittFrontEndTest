@@ -1,0 +1,34 @@
+{
+  "name": "JumpittFrontEndTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrXploder/JumpittFrontEndTest.git"
+  },
+  "author": "MrXploder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrXploder/JumpittFrontEndTest/issues"
+  },
+  "homepage": "https://github.com/MrXploder/JumpittFrontEndTest#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-obfuscator": "^4.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-gitinfo": "^0.1.8",
+    "grunt-html2js": "^0.5.1",
+    "grunt-ng-constant": "^2.0.1",
+    "grunt-script-link-tags": "^1.0.2",
+    "livereload": "^0.7.0"
+  }
+}

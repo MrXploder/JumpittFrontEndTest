@@ -5,12 +5,12 @@
 		.module('angularApp')
 		.controller('loginController', loginController);
 
-	loginController.$inject = ["$scope", "Auth", "$state"];
+	loginController.$inject = ["$state"];
 
-	function loginController($scope, Auth, $state) {
+	function loginController($state) {
 		let $ctrl = this;
 
-		$ctrl.loginForm = new Auth();
+		$ctrl.loginForm = {};
 		$ctrl.loginCommit = loginCommit;
 
 		activate();
@@ -21,7 +21,7 @@
 		}
 
 		function loginCommit() {
-			$ctrl.loginForm.$logIn().then(() => $state.go("home"));
+			$state.go("home");
 		}
 	}
-})(angular);
+})(window.angular);

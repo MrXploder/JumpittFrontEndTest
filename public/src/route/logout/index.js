@@ -5,17 +5,15 @@
 	.module('angularApp')
 	.controller('logoutController', logoutController);
 
-	logoutController.$inject = ["$scope", "$sessionStorage", "$state"];
+	logoutController.$inject = ["$state"];
 
-	function logoutController($scope, $sessionStorage, $state){
+	function logoutController($state){
 		let $ctrl = this;
-
 
 		activate();
 		/////////////////////////////////
 
 		function activate(){
-			delete $sessionStorage.currentUser;
 			$state.go("home");
 		}
 	}

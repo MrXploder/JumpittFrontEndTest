@@ -12,23 +12,11 @@
 		.module('angularApp')
 		.run(angularRunMethod);
 
-	angularRunMethod.$inject = ["$rootScope", "$localStorage", "$sessionStorage", "$state", "$window", "$timeout", "$interval", "ngNotify"];
+	angularRunMethod.$inject = ["$rootScope", "$state", "$window", "$timeout", "$interval"];
 
-	function angularRunMethod($rootScope, $localStorage, $sessionStorage, $state, $window, $timeout, $interval, ngNotify) {
+	function angularRunMethod($rootScope, $state, $window, $timeout, $interval) {
 		/*do not expose internal flags*/
 		let iRouteChanging = false;
-
-		/*config ngNotify*/
-		/*I modify ngNotify so the padding bottom is the same as the navbar heigh*/
-		ngNotify.config({
-			theme: 'pure',
-			position: 'top',
-			duration: 3000,
-			sticky: false,
-			button: false,
-			html: false
-		});
-
 		/**
 			globals for easy access in all templates...
 			rootScope is: $rs
@@ -41,9 +29,6 @@
 			something about the ngStorage library.
 		*/
 		$rootScope.$rs = {
-			$currentUser() {
-				return $sessionStorage.currentUser;
-			},
 			$isRouteChanging: false,
 		};
 
@@ -55,11 +40,6 @@
 		*/
 		$rootScope.$on('$stateChangeStart', (event, toState, toParams, fromState, fromParams) => {
 			$rootScope.$rs.$isRouteChanging = true;
-
-			if (toState.data.requireLogin && !$sessionStorage.currentUser) {
-				event.preventDefault();
-				$state.go("login");
-			}
 		});
 
 
