@@ -1,4 +1,4 @@
-# Jumpiit Front-End Test
+# Jumpitt Front-End Test
 
 Repo creado con la intención de participar de la postulación de Desarrollador Front-End para la empresa 'Jumpitt'
 
