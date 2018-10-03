@@ -16,12 +16,6 @@ node start
 Luego abre tu navegador favorito en: http://localhost
 Deberias ver de inmediato la aplicación.
 
-O mas rapido!:
-https://mrxploder.github.io/JumpittFrontEndTest/public/#!/login
-
-
-
-
 ACERCA
 -----------
 Esta aplicación está desarrollada con AngularJS 1.7 y Bootstrap 3.7
